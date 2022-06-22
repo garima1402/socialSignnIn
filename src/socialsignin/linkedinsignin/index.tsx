@@ -5,14 +5,7 @@ import { useNavigate } from "react-router-dom";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     iconandtextDiv: {
-      alignItems: "center",
-      display: "flex",
-      cursor: "pointer",
-      boxShadow:
-        "rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px",
-      lineHeight: "2",
-      justifyContent: "space-between",
-      padding: "10px",
+      display: "inline-flex",
     },
     text: {
       backgroundColor: "#FFFFFF",
@@ -21,6 +14,9 @@ const useStyles = makeStyles((theme: Theme) =>
       textTransform: "none",
       paddingLeft: 0,
       border: "none",
+    },
+    imgClass: {
+      width: "20%",
     },
   })
 );
@@ -42,7 +38,7 @@ function LinkedinSignIn() {
 
   return (
     <div className={classes.iconandtextDiv} onClick={linkedInLogin}>
-      <img src="/linkedin.svg" alt="linkedin" />
+      <img src="/linkedin.svg" className={classes.imgClass} alt="linkedin" />
       <p className={classes.text}>Sign in with Linkedin</p>
     </div>
   );

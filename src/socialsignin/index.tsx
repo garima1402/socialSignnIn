@@ -16,7 +16,13 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: "space-between",
       width: "300px",
       margin: "0 auto",
-      border: "npne",
+      border: "none",
+      display: "inline-flex",
+    },
+    divClass: {
+      alignItems: "center",
+      display: "flex",
+      flexDirection: "column",
     },
   })
 );
@@ -26,11 +32,9 @@ function Home() {
   return (
     <>
       <h1>Welcome to Social Sign In!</h1>
-      <div className={classes.container}>
+      <div className={classes.divClass}>
         <GoogleSignIn />
-        <Divider />
         <FacebookSignIn />
-        <Divider />
         <LinkedinSignIn />
       </div>
     </>
