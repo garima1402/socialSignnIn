@@ -37,7 +37,6 @@ const GoogleSignIn = ({ signupSlide }: Props) => {
   };
   const handleGoogleLoginFailure = async (response: any) => {
     console.log(response, 'Google Failure!');
-    
   };
   return (
     <React.Fragment>
