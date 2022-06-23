@@ -2,6 +2,7 @@ import { useLinkedIn } from "react-linkedin-login-oauth2";
 import { makeStyles, createStyles } from "@mui/styles";
 import { Theme } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     iconandtextDiv: {
